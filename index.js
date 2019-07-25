@@ -1,3 +1,4 @@
+//esversion:6
 var express =  require('express');
 var cors = require('cors');
 
@@ -7,7 +8,7 @@ app.use(cors());
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(request, response) {
-  response.send('Hello World!')
+  response.send('Hello World!');
 });
 
 app.get('/users', function(req, res) {
